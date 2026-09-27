@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+/* Jetons du design system (docs/UI_UX.md) — complétés au lot L0.7.
+   Aucune police externe : l'application fonctionne hors ligne. */
+@theme {
+  --font-sans: 'Segoe UI', system-ui, sans-serif;
+}

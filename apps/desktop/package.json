@@ -1,0 +1,17 @@
+{
+  "name": "@hm/desktop",
+  "version": "2.0.0-dev",
+  "private": true,
+  "description": "Coque Electron de Hotel Manager (mode serveur ou poste client)",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc && electron .",
+    "dist": "node -e \"console.error('dist — installateur NSIS : lot L0.9.'); process.exit(1)\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "electron": "^44.4.5",
+    "electron-builder": "^26.15.3"
+  }
+}

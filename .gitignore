@@ -1,0 +1,21 @@
+node_modules/
+dist/
+out/
+release/
+coverage/
+*.tsbuildinfo
+.vite/
+# Données locales du serveur en développement
+data/
+*.db
+*.db-wal
+*.db-shm
+# Playwright
+test-results/
+playwright-report/
+# Divers
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db

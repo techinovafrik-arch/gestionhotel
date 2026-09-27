@@ -1,0 +1,34 @@
+{
+  "name": "hotel-manager",
+  "version": "2.0.0-dev",
+  "private": true,
+  "description": "Hotel Manager — progiciel de gestion hôtelière local multi-postes Windows",
+  "packageManager": "pnpm@10.34.5",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter @hm/server --filter @hm/web --filter @hm/desktop dev",
+    "dev:server": "pnpm --filter @hm/server dev",
+    "test": "pnpm -r --if-present test",
+    "test:e2e": "pnpm --filter @hm/web test:e2e",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "db:generate": "pnpm --filter @hm/server db:generate",
+    "db:migrate": "pnpm --filter @hm/server db:migrate",
+    "db:seed:demo": "pnpm --filter @hm/server db:seed:demo",
+    "dist": "pnpm --filter @hm/web build && pnpm --filter @hm/server build && pnpm --filter @hm/desktop dist"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.3",
+    "eslint": "^10.11.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.9",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.1",
+    "vitest": "^5.0.2"
+  }
+}
