@@ -1,4 +1,4 @@
-# Kit de vibecoding Claude Code — Hotel Manager
+# Kit Application — Hotel Manager
 
 Ce dossier contient tout ce dont Claude Code a besoin pour développer **Hotel Manager**, le logiciel de gestion hôtelière prêt à l'emploi, multi-postes, en réseau local Windows, décrit dans le cahier des charges TIAF du 26/09/2026.
 
